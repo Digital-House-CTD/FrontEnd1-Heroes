@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url(normalize.css);
+:root {
+  --primary-color: #00669f;
+  --secondary-color: #1cd1b0;
+  --tertiary-color: #001d2d;
+  --text-dark: #333333;
+  --text-light: #fff9f9;
+  --enhancement-color: #cc2424;
+  --font-size-h1: 40px;
+  --font-size-subtitle: 15px;
+  --font-size-h3: 30px;
+  --font-size-h4: 20px;
+  --font-size-p: 16px;
+  --color-softwhite: #f3f3f3;
+  --font-family-ui:'Roboto', sans-serif;
+  --font-family-form: 'Inter', sans-serif;
+  --font-family-extra: 'Karla', sans-serif;
+}

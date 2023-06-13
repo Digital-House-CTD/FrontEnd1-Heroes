@@ -1,0 +1,147 @@
+@import url(styles.css);
+
+/*Main Form*/
+label,
+input,
+textarea,
+.add-btn,
+.checkbox p,
+.radio p {
+	font-family: var(--font-family-form);
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	background-color: var(--primary-color);
+	margin: 40px 0;
+	width: 954px;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title.top-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title.top-form h2 {
+	font-weight: 700;
+    line-height: 71.79px;
+    font-family: var(--font-family-form);
+}
+.title.top-form p {
+	font-size: var(--font-size-h4);
+	font-weight: 300;
+    font-family: var(--font-family-form);
+}
+.contact-form {
+	display: flex;
+	margin: 20px 123px;
+    justify-content: space-between;
+}
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: transparent;
+}
+
+label,
+.checkbox p,
+.radio p {
+	font-weight: 300;
+	font-size: var(--font-size-h4);
+	padding-bottom: 15px;
+	color: white;
+}
+.mandatory::before {
+	content: "*";
+}
+input,
+select {
+	width: 343px;
+	height: 63px;
+	background: #ffffff;
+	border: 1.53407px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15.3407px;
+	margin-bottom: 30px;
+}
+textarea {
+	width: 343px;
+	height: 307px;
+	background: #ffffff;
+	border: 1.53407px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15.3407px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	background: #ffffff;
+	border: 1px solid #c4c4c4;
+	font-family: var(--font-family-extra);
+    margin-right: 20px;
+}
+input[type="checkbox"] {
+	width: 24px;
+	height: 20px;
+}
+input[type="radio"] {
+	width: 20px;
+	height: 20px;
+}
+.checkbox label {
+	font-size: var(--font-size-p);
+	padding-bottom: 0px;
+}
+.checkbox input,
+.radio input {
+	margin-bottom: 13px;
+}
+.radio p {
+	border-top: 1px solid #cccccc;
+	padding-top: 20px;
+	margin-top: 34px;
+}
+
+.file {
+	background: transparent;
+    border: transparent;
+    padding-top: 10px;
+}
+input[type="file"]::file-selector-button{
+	border-radius: 5px;
+    font-weight: 300;
+    font-size: 13px;
+    width: 223px;
+	height: 32px;
+    background: #CECECE;
+    border: transparent;
+    font-family: var(--font-family-form);
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+}
+
+input::placeholder, textarea::placeholder, select, input[type="date"]{
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+textarea::placeholder{
+padding-top: 20px;
+}
+.add-btn {
+    width: 466px;
+    height: 87px;
+    background: var(--secondary-color);
+    border-radius: 24px;
+    border: transparent;
+    font-family: var(--font-family-form);
+    font-size: var(--font-size-h1);
+    color: #000000;
+    font-weight: 700;
+    align-self: center;
+    margin-bottom: 18px;
+}
