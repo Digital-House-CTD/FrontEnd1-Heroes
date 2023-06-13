@@ -77,11 +77,11 @@ main {
 }
 
 .back-batman {
-	background-image: url(resources/img/back\ batman.png);
+	background-image: url(../img/back\ batman.png);
 }
 
 .back-harley {
-	background-image: url(resources/img/back\ harley.png);
+	background-image: url(../img/back\ harley.png);
 }
 
 .card-top {
