@@ -60,6 +60,9 @@ label,
 .mandatory::before {
 	content: "*";
 }
+label{
+	display: flex;
+}
 input,
 select {
 	width: 343px;
@@ -68,6 +71,8 @@ select {
 	border: 1.53407px solid rgba(0, 0, 0, 0.1);
 	border-radius: 15.3407px;
 	margin-bottom: 30px;
+	font-size: 20px;
+	padding-left: 10px;
 }
 textarea {
 	width: 343px;
@@ -75,14 +80,28 @@ textarea {
 	background: #ffffff;
 	border: 1.53407px solid rgba(0, 0, 0, 0.1);
 	border-radius: 15.3407px;
+	padding: 20px 12px 30px;
+	font-size: 15px;
 }
 input[type="checkbox"],
 input[type="radio"] {
 	background: #ffffff;
-	border: 1px solid #c4c4c4;
+	border: 2px solid #c4c4c4;
 	font-family: var(--font-family-extra);
     margin-right: 20px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
 }
+
+input[type="radio"]:checked::before{
+	content: "";
+	width: 14px;
+	height: 14px;
+	background-color: #4DD1FB;
+	border-radius: 50%;
+}
+
 input[type="checkbox"] {
 	width: 24px;
 	height: 20px;
@@ -91,6 +110,11 @@ input[type="radio"] {
 	width: 20px;
 	height: 20px;
 }
+input[type="radio"]:checked,input[type="checkbox"]:checked{
+	filter: brightness(1.75);
+
+}
+
 .checkbox label {
 	font-size: var(--font-size-p);
 	padding-bottom: 0px;
@@ -124,14 +148,12 @@ input[type="file"]::file-selector-button{
     text-align: left;
 }
 
-input::placeholder, textarea::placeholder, select, input[type="date"]{
+input::placeholder, textarea::placeholder, select:disabled,input[type="date"]{
     padding-left: 10px;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.5);
 }
-textarea::placeholder{
-padding-top: 20px;
-}
+
 .add-btn {
     width: 466px;
     height: 87px;

@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./resources/css/contact.css" />
+		<link rel="stylesheet" href="./resources/css/add.css" />
+		<link rel="stylesheet" href="./resources/css/prueba.css" />
 		<title>Heroes</title>
 	</head>
 	<body>
@@ -17,14 +18,14 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="./contact.html">Contacto</a></li>
+					<li><a href="">Contacto</a></li>
 					<li><a href="">Registrarme</a></li>
 					<li><a href="">Ingresar</a></li>
 				</ul>
 			</nav>
 		</section>
 		<main class="form-container">
-			<form action="" class="">
+			<form action="index.html">
 				<div class="title top-form">
 					<h2>Añadí tu super!</h2>
 					<p>
@@ -54,7 +55,8 @@
 					<fieldset class="right-column">
 						<label for="Especie" class="mandatory">Especie</label>
 						<select name="Especie" id="Especie" required>
-							<option value="Unknown">Especie</option>
+							<option value="Unknown" disabled selected>Especie</option>
+							<option value="Unknown">Unknown</option>
 						</select>
 						<label for="AgregarFoto">Agregar Foto</label>
 						<input
@@ -71,6 +73,7 @@
 									name="Poderes"
 									id="Volar"
 									value="Volar"
+									class="box"
 								/>
 								Volar
 							</label>
@@ -81,7 +84,7 @@
 									name="Poderes"
 									id="SuperInteligencia"
 									value="SuperInteligencia"
-									checked
+									class="box"
 								/>
 								SuperInteligencia
 							</label>
@@ -91,6 +94,7 @@
 									name="Poderes"
 									id="VistaLaser"
 									value="VistaLaser"
+									class="box"
 								/>
 								Vista de rayo láser
 							</label>
@@ -100,6 +104,7 @@
 									name="Poderes"
 									id="BilleteraGorda"
 									value="BilleteraGorda"
+									class="box"
 								/>
 								Billetera gorda
 							</label>
@@ -128,7 +133,7 @@
 						</fieldset>
 					</fieldset>
 				</section>
-				<button class="add-btn">Añadir</button>
+				<button type="submit" class="add-btn">Añadir</button>
 			</form>
 		</main>
 		<footer>
